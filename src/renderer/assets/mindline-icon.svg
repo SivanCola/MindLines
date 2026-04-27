@@ -1,0 +1,23 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mindline icon</title>
+  <desc id="desc">A rounded emerald app icon with two connected thought lines and conversation nodes.</desc>
+  <rect x="0" y="0" width="256" height="256" rx="58" fill="#0E5238"/>
+  <rect x="0" y="0" width="256" height="256" rx="58" fill="url(#glow)"/>
+  <path d="M74 92C96 64 130 65 151 90C168 111 171 139 152 163C130 191 94 190 73 164" stroke="#A8E8C4" stroke-width="18" stroke-linecap="round"/>
+  <path d="M78 164C101 135 128 126 159 132C178 136 191 148 199 166" stroke="#FCF8FB" stroke-width="18" stroke-linecap="round"/>
+  <path d="M77 92C99 116 124 125 153 122C173 120 187 111 197 94" stroke="#FCF8FB" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="73" cy="92" r="17" fill="#0E5238" stroke="#A8E8C4" stroke-width="10"/>
+  <circle cx="73" cy="164" r="17" fill="#0E5238" stroke="#A8E8C4" stroke-width="10"/>
+  <circle cx="199" cy="94" r="17" fill="#0E5238" stroke="#FCF8FB" stroke-width="10"/>
+  <circle cx="199" cy="166" r="17" fill="#0E5238" stroke="#FCF8FB" stroke-width="10"/>
+  <path d="M108 93C119 85 135 87 144 98" stroke="#0E5238" stroke-width="9" stroke-linecap="round" opacity="0.7"/>
+  <path d="M109 164C121 172 136 169 145 158" stroke="#0E5238" stroke-width="9" stroke-linecap="round" opacity="0.7"/>
+  <rect x="18" y="18" width="220" height="220" rx="46" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(186 52) rotate(126) scale(180 170)">
+      <stop stop-color="#2D6A4E"/>
+      <stop offset="0.55" stop-color="#0E5238" stop-opacity="0"/>
+      <stop offset="1" stop-color="#002113" stop-opacity="0.38"/>
+    </radialGradient>
+  </defs>
+</svg>

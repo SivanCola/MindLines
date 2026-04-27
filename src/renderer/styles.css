@@ -1,0 +1,39 @@
+@import './styles/base.css';
+@import './components/Shell.css';
+@import './components/Sidebar.css';
+
+.message-bubble.streaming {
+  border-color: color-mix(in srgb, var(--accent) 28%, var(--border));
+}
+
+.message-bubble.streaming .markdown-content::after {
+  content: '';
+  display: inline-block;
+  width: 0.45em;
+  height: 1em;
+  margin-left: 0.2em;
+  vertical-align: -0.15em;
+  background: var(--accent);
+  border-radius: 999px;
+  animation: cursorBlink 1s steps(2, start) infinite;
+}
+
+.error-boundary-state {
+  align-self: center;
+}
+
+.root-error-boundary {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.topic-composer {
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 96%, transparent), color-mix(in srgb, var(--surface-muted) 78%, transparent)),
+    var(--surface);
+}
+
+@keyframes cursorBlink {
+  50% { opacity: 0; }
+}
