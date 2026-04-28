@@ -1,8 +1,21 @@
 <div align="center">
 
-# Mindline
+<h1>Mindline</h1>
 
-English | [中文](./README.zh-CN.md)
+<hr />
+
+<h2>The Local-First AI Thinking Workspace for Projects, Reviews, and Multi-Model Collaboration</h2>
+
+<p>
+  <img alt="version" src="https://img.shields.io/badge/version-v0.1.0-2388d1?labelColor=555555" />
+  <img alt="platform" src="https://img.shields.io/badge/platform-macOS-9a9a9a?labelColor=555555" />
+  <img alt="built with" src="https://img.shields.io/badge/built%20with-Electron%20%2B%20React-ff7043?labelColor=555555" />
+  <img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-35c12b?labelColor=555555" />
+</p>
+
+<p>
+  English | <a href="./README.zh-CN.md">中文</a> | <a href="#license">License</a>
+</p>
 
 </div>
 
