@@ -191,3 +191,7 @@ npm run dist:mac
 ## 当前状态
 
 Mindline 仍处于快速迭代阶段，但已经具备本地工作区、阶段和话题管理、模型供应商、流式回复、总结、上下文篮、搜索、Markdown 导出、备份、主题和快捷键设置等核心能力。
+
+## 开源协议
+
+本项目基于 Apache License 2.0 开源，详见 [LICENSE](./LICENSE)。
