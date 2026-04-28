@@ -1,111 +1,115 @@
-# Mindline（心线）
+<div align="center">
 
-[English](./README.en.md)
+# Mindline
 
-Mindline（心线）是一款本地优先的 AI 思考工作区。它把对话整理成「阶段」和「话题」，适合用来推进项目、复盘决策、沉淀长期思考，并在需要时把已有内容作为上下文继续讨论。
+English | [中文](./README.zh-CN.md)
 
-它不是一个只保存聊天记录的窗口。Mindline 更关注一件事：让你在一个项目里持续积累问题、结论、阶段总结和可迁移的 Markdown 数据。
+</div>
 
-## 界面预览
+Mindline is a local-first AI thinking workspace. It organizes conversations into phases and topics, so you can move projects forward, review decisions, preserve long-running thinking, and reuse existing material as context for new discussions.
 
-![工作区概览与阶段目录](./docs/screenshots/overview-zh.png)
+It is not just a chat history window. Mindline is designed around one practical goal: helping you keep questions, conclusions, phase summaries, and portable Markdown data inside your own project workspace.
 
-![话题总结与对话](./docs/screenshots/topic-zh.png)
+## Screenshots
 
-## 适合谁
+![Workspace overview and phase directory](./docs/screenshots/overview-en.png)
 
-- 需要围绕一个项目长期和 AI 讨论的人。
-- 希望把不同问题拆成多个话题，而不是混在同一条长对话里的人。
-- 经常做项目复盘、产品思考、研究整理、写作规划或技术方案推演的人。
-- 希望聊天内容保存在自己本地项目目录，而不是只留在云端产品里的人。
-- 需要在不同模型供应商之间切换，并保留统一工作流的人。
+![Topic summary and conversation](./docs/screenshots/topic-en.png)
 
-## 核心概念
+## Who It Is For
 
-### 工作区
+- People who discuss the same project with AI over a long period of time.
+- People who want separate topics instead of one long mixed conversation.
+- People doing project reviews, product thinking, research notes, writing plans, or technical design work.
+- People who want conversation data stored in a local project folder.
+- People who switch between multiple model providers while keeping one workflow.
 
-工作区是你选择的一个本地项目目录。Mindline 会在这个目录里保存阶段、话题、消息和总结。你可以为不同项目选择不同目录。
+## Core Concepts
 
-### 阶段
+### Workspace
 
-阶段用来承接一组相关话题，例如「需求探索」「设计方案」「开发实现」「上线复盘」。阶段可以生成总结，也可以结束、恢复或移到回收站。
+A workspace is a local project folder you choose. Mindline stores phases, topics, messages, and summaries inside that folder. You can use different folders for different projects.
 
-如果你没有指定阶段，新话题会进入默认阶段。默认阶段现在也按普通二级阶段使用，不需要额外理解特殊规则。
+### Phase
 
-### 话题
+A phase groups related topics, such as "Discovery", "Design", "Implementation", or "Launch review". A phase can have its own summary and can be ended, restored, or moved to trash.
 
-话题是一条独立的 AI 对话线。每个话题都有自己的消息、总结、所属阶段和 Markdown 数据。
+If no phase is specified, new topics go into the default phase. The default phase behaves like a normal second-level phase in the UI.
 
-### 上下文篮
+### Topic
 
-你可以把消息、话题、话题总结或阶段总结加入上下文篮，再基于这些材料发起一次新的讨论。它适合做跨话题整理、复盘和决策对比。
+A topic is an independent AI conversation thread. Each topic has its own messages, summary, phase assignment, and Markdown data.
 
-## 快速开始
+### Context Basket
 
-1. 启动 Mindline。
-2. 选择一个本地项目目录作为工作区。
-3. 打开「设置」，添加并启用模型供应商。
-4. 新建阶段，或直接在默认阶段中新建话题。
-5. 在话题中输入问题并发送。
-6. 需要沉淀时，生成话题总结或阶段总结。
-7. 需要复用材料时，把内容加入上下文篮继续讨论。
-8. 需要归档或分享时，导出 Markdown。
+You can add messages, topics, topic summaries, or phase summaries to the context basket, then start a new discussion using those selected materials. This is useful for cross-topic review, synthesis, and decision making.
 
-## 主要功能
+## Quick Start
 
-- 阶段与话题管理：按阶段组织话题，支持折叠、重命名、移动、结束、恢复和回收站。
-- 多模型对话：支持本地工具和云端 API 供应商，可切换默认启用模型。
-- 流式回复：模型回复会实时显示，生成中可以取消。
-- 总结沉淀：可为单个话题或整个阶段生成结构化总结。
-- 上下文篮：把多个消息、话题或总结组合起来，发起二次讨论。
-- 搜索：搜索阶段、话题、消息、话题总结和阶段总结。
-- Markdown 导出：导出话题或阶段，导出标题会跟随当前界面语言。
-- 备份：通过 Git 备份 Mindline 数据，可连接已有远端仓库同步备份。
-- 主题与语言：支持中文、英文界面和多套主题。
-- 快捷键偏好：支持配置 Enter 发送或换行，并保留 Cmd/Ctrl + Enter 发送。
+1. Launch Mindline.
+2. Choose a local project folder as the workspace.
+3. Open Settings, then add and enable a model provider.
+4. Create a phase, or create a topic directly inside the default phase.
+5. Ask a question in the topic composer.
+6. Generate a topic or phase summary when you want to preserve conclusions.
+7. Add useful material to the context basket for follow-up discussions.
+8. Export Markdown when you need an archive or shareable document.
 
-## 常用操作
+## Main Features
 
-### 新建阶段
+- Phase and topic management: organize topics by phase, with folding, renaming, moving, ending, restoring, and trash.
+- Multi-provider AI chat: use local tools or cloud API providers and switch the active model.
+- Streaming replies: model responses appear as they are generated and can be cancelled.
+- Summaries: generate structured summaries for individual topics or entire phases.
+- Context basket: combine messages, topics, and summaries for a second discussion.
+- Search: search phases, topics, messages, topic summaries, and phase summaries.
+- Markdown export: export topics or phases; headings follow the current UI language.
+- Backups: back up Mindline data with Git and connect an existing remote repository for sync.
+- Themes and languages: Chinese and English UI, plus multiple themes.
+- Keyboard preferences: configure Enter-to-send behavior while keeping Cmd/Ctrl + Enter as explicit send.
 
-点击「新建阶段」后，Mindline 会立即跳到阶段列表中的新建草稿，并聚焦名称输入框。输入阶段名后确认即可创建并打开该阶段。
+## Common Actions
 
-### 新建话题
+### Create a Phase
 
-点击「新建话题」后，Mindline 会立即跳到目标阶段，并在该阶段下打开新建话题输入框。没有目标阶段时，话题会创建在默认阶段。
+Click "New phase". Mindline immediately jumps to the phase list draft and focuses the name input. Enter a phase name to create and open it.
 
-快捷键：`Cmd/Ctrl + N`。
+### Create a Topic
 
-### 移动话题
+Click "New topic". Mindline immediately jumps to the target phase and opens a topic-name draft input under that phase. If no target phase is specified, the topic is created in the default phase.
 
-在侧边栏右键话题，选择「移动到阶段」，再选择目标阶段。默认阶段也会作为普通可选目标出现。
+Shortcut: `Cmd/Ctrl + N`.
 
-### 生成总结
+### Move a Topic
 
-在话题页或阶段页点击总结按钮。总结会保存到对应的 `summary.md`，以后重新打开也能继续查看。
+Right-click a topic in the sidebar, choose "Move to phase", then select the target phase. The default phase is also available as a normal target.
 
-### 使用上下文篮
+### Generate a Summary
 
-在消息、话题或总结上点击「加入上下文」。右侧上下文篮会收集这些材料，你可以用它们发起新的讨论。
+Use the summary button on a topic or phase page. The summary is saved to the corresponding `summary.md` and remains available when you reopen the workspace.
 
-### 导出 Markdown
+### Use the Context Basket
 
-在话题页或阶段页的更多菜单中选择「导出 Markdown」。导出会通过系统保存对话框选择目标路径，不会覆盖原始数据。
+Click "Add context" on a message, topic, or summary. The context basket collects the selected material so you can start a new discussion with it.
 
-## 模型供应商
+### Export Markdown
 
-Mindline 支持两类模型接入：
+Use the more menu on a topic or phase page and choose "Export Markdown". Mindline asks where to save the file and does not overwrite source data.
 
-| 类型 | 适合场景 |
+## Model Providers
+
+Mindline supports two provider types:
+
+| Type | Best For |
 | --- | --- |
-| 本地工具 | 通过命令行或本地配置调用 Claude Code、Codex、OpenClaw 等工具 |
-| 云端模型 | 通过 API Key、API 地址、模型名和协议调用云端模型 |
+| Local tools | Calling tools such as Claude Code, Codex, OpenClaw, or custom local commands |
+| Cloud models | Calling cloud models with an API key, API URL, model name, and protocol |
 
-云端协议支持 OpenAI Chat Completions 和 Anthropic Messages。API Key 会单独保存在本机用户目录，不写入项目目录。
+Cloud protocols include OpenAI Chat Completions and Anthropic Messages. API keys are stored separately in the local user directory and are not written into the project folder.
 
-## 数据与隐私
+## Data and Privacy
 
-Mindline 默认把知识数据保存在你选择的项目目录里：
+Mindline stores project knowledge in the workspace folder you choose:
 
 ```text
 {project}/
@@ -115,7 +119,7 @@ Mindline 默认把知识数据保存在你选择的项目目录里：
   phases/
 ```
 
-本机偏好、模型供应商配置和密钥保存在用户目录：
+Local preferences, model provider configuration, and secrets are stored in the user directory:
 
 ```text
 ~/.mindline/
@@ -125,36 +129,36 @@ Mindline 默认把知识数据保存在你选择的项目目录里：
     secrets/
 ```
 
-说明：
+Notes:
 
-- `topics/` 和 `phases/` 是项目知识资产，便于你直接查看、迁移和备份。
-- `.mindline/` 保存内部索引和工作区元信息。
-- API Key 存在 `~/.mindline/model-providers/secrets/`，不会写入项目 Git。
-- 备份功能只管理 Mindline 数据，不接管你的项目代码和用户自己的 `.git`。
-- 旧版本数据会在打开工作区时自动迁移；迁移前的旧目录会保留，便于核对和回退。
+- `topics/` and `phases/` are visible project knowledge assets, so you can inspect, move, and back them up.
+- `.mindline/` stores internal indexes and workspace metadata.
+- API keys are stored in `~/.mindline/model-providers/secrets/` and are not written to project Git.
+- Backup only manages Mindline data. It does not take over your project code or your own `.git`.
+- Older data layouts are migrated automatically when a workspace opens. Old source directories are kept so you can verify or roll back.
 
-## 快捷键
+## Keyboard Shortcuts
 
-| 操作 | 快捷键 |
+| Action | Shortcut |
 | --- | --- |
-| 搜索 | `Cmd/Ctrl + K` |
-| 新建话题 | `Cmd/Ctrl + N` |
-| 发送消息 | `Enter`，可在设置里改为换行 |
-| 换行 | `Shift + Enter` |
-| 显式发送 | `Cmd/Ctrl + Enter` |
-| 关闭面板或取消生成 | `Esc` |
-| 切换话题 | `Cmd/Ctrl + Shift + [` / `]` |
+| Search | `Cmd/Ctrl + K` |
+| New topic | `Cmd/Ctrl + N` |
+| Send message | `Enter`, configurable in Settings |
+| New line | `Shift + Enter` |
+| Explicit send | `Cmd/Ctrl + Enter` |
+| Close panel or cancel generation | `Esc` |
+| Switch topic | `Cmd/Ctrl + Shift + [` / `]` |
 
-## 从源码运行
+## Run From Source
 
-如果你是从源码使用 Mindline：
+If you use Mindline from source:
 
 ```bash
 npm install
 npm run dev
 ```
 
-常用检查：
+Useful checks:
 
 ```bash
 npm run typecheck
@@ -162,36 +166,36 @@ npm test
 npm run build
 ```
 
-macOS 本地打包：
+Package locally for macOS:
 
 ```bash
 npm run package:mac
 npm run dist:mac
 ```
 
-## 故障排查
+## Troubleshooting
 
-### 找不到已有工作区
+### Existing Workspace Is Not Found
 
-请选择原项目目录，而不是只选择其中的 `topics/` 或 `phases/` 子目录。Mindline 会自动读取或创建 `.mindline/manifest.json`。
+Choose the original project folder, not only its `topics/` or `phases/` subfolder. Mindline will read or create `.mindline/manifest.json` automatically.
 
-### 模型调用失败
+### Model Calls Fail
 
-请检查：
+Check:
 
-- 当前启用的供应商是否正确。
-- API Key 是否属于对应平台。
-- 协议是否匹配供应商要求。
-- API 地址和模型名是否填写完整。
+- The active provider is correct.
+- The API key belongs to the selected platform.
+- The protocol matches the provider requirement.
+- The API URL and model name are complete.
 
-### macOS 提示无法验证开发者
+### macOS Says the Developer Cannot Be Verified
 
-如果你使用的是未签名的内测包，macOS 可能提示无法验证开发者。可以在 Finder 中右键应用并选择打开。正式分发版本应使用 Developer ID 签名和 notarization。
+If you are using an unsigned internal build, macOS may show a verification warning. Open the app from Finder with right-click, then choose Open. Public distribution builds should use Developer ID signing and notarization.
 
-## 当前状态
+## Current Status
 
-Mindline 仍处于快速迭代阶段，但已经具备本地工作区、阶段和话题管理、模型供应商、流式回复、总结、上下文篮、搜索、Markdown 导出、备份、主题和快捷键设置等核心能力。
+Mindline is still iterating quickly, but it already includes local workspaces, phase and topic management, model providers, streaming replies, summaries, context basket, search, Markdown export, backups, themes, and keyboard settings.
 
-## 开源协议
+## License
 
-本项目基于 Apache License 2.0 开源，详见 [LICENSE](./LICENSE)。
+Mindline is open source under the Apache License 2.0. See [LICENSE](./LICENSE).
